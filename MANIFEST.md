@@ -160,7 +160,7 @@ This manifest lists 170 files in the local review candidate. Each row records th
 | `src/planner/reference.py` | 7,279 | `1fc61f54be4637cdd10653219318f94eedc3e522d34347486f08af4233bb89b3` |
 | `src/runtime/__init__.py` | 68 | `49f23c0ebc53de46f81ab626d7189c164a70b0dfa018762a5fd64ceba6d3d181` |
 | `src/runtime/board_protocol.py` | 5,187 | `8f190b34f16c902c5fe0838ab2bc54e0d20781247678f0d3175efddd24d63321` |
-| `THIRD_PARTY_NOTICES.md` | 6,509 | `b887805ccc7723cf39b7ed4f847e6b6b1b5afdefc89cd0f4c603982887bb04e9` |
+| `THIRD_PARTY_NOTICES.md` | 6,703 | `ef89d6692481046ad8d6ed4b3b49cc3f7e9d79fb0ddcd678f3d88ade4b9213f8` |
 | `tools/board_atc9_e3.sh` | 4,403 | `753719a0fb468cbd154212698d4523cb3724f90d8c82ab9cd889814b2fe99f77` |
 | `tools/board_bw_probe.c` | 4,391 | `b0d0d13e8b35755ee07c905c9cab9ed794289c8b40a70e2ddcf3554f4659e870` |
 | `tools/board_calib9.sh` | 1,311 | `24904407a788a7889bec9e1c7a733000de14bdde50f912d2e8303efc618f3364` |

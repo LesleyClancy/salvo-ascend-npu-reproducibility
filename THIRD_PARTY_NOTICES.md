@@ -46,9 +46,9 @@ If a future release ships HumanEval problems or a subset, it must carry OpenAI's
 
 | | |
 |---|---|
-| Upstream | GitHub: https://github.com/ucfnlp/jfleg ; dataset card: https://huggingface.co/datasets/jhu-clsp/jfleg |
+| Upstream | GitHub: https://github.com/keisks/jfleg ; dataset card: https://huggingface.co/datasets/jhu-clsp/jfleg |
 | Licence | **CC BY-NC-SA 4.0**, per the Hugging Face dataset card. **A licence file was not found at the root of the GitHub project**, so this attribution rests on the dataset card, not on the upstream repository |
-| Version used | `dev.src`, 755 sentences, 72,726 bytes, sha256 `4a0e8b86d18a1058460ff0a592dac1ba68986d135256efbd27e997ac43f295f8`. **The download URL and retrieval date were not recorded when the file was fetched on 2026-10-24**; the hash above is the only pin, and it matches the sentence count of the public `dev.src` |
+| Version used | `dev.src`, 755 sentences, 72,726 bytes, sha256 `4a0e8b86d18a1058460ff0a592dac1ba68986d135256efbd27e997ac43f295f8`. The original download URL and retrieval date were not recorded. On 2026-11-04, `dev/dev.src` at GitHub commit `ee06ff806a208aba815ac45313f4e750a48330a5` was independently fetched and matched this byte count and SHA-256; the historical Hugging Face dataset metadata also records this hash for that upstream path. This match does not establish the URL or date of the original download |
 | How used | dev sentences with **≥ 25 source tokens** (shorter ones end before N=16 and are unusable), then the first 20 whose chat-templated prompt stays within L ≤ 180. Used as a workload; the correction quality of a 0.5B model is not evaluated and no GLEU/ERRANT score is claimed |
 | Redistributed? | **No.** No source sentences, no references, no token sequence from which a sentence can be recovered |
 

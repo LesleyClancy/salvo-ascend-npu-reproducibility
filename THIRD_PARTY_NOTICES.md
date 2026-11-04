@@ -2,7 +2,7 @@
 
 This package contains code and derived data produced by the authors, plus references to four third-party materials. **None of the four is redistributed here** — no model weights, no dataset text, no upstream code. What follows is what each one is, what it is licensed under, which version this work used, and how it was used.
 
-The root `LICENSE` (MIT) applies only to material the authors have the right to license: the scripts, the documentation, and the twelve synthetic input cases. It does not extend to any third-party material, and nothing in this package should be read as granting rights that the authors do not hold. The newly curated workload metrics are under rights review; no additional license grant for those records is asserted in this draft. They contain no dataset source text or token sequences, but that fact alone does not resolve the legal treatment of every derived metric.
+The root `LICENSE` (MIT) applies only to material the authors have the right to license: the scripts, the documentation, and the twelve synthetic input cases. It does not extend to any third-party material, and nothing in this package should be read as granting rights that the authors do not hold. The legal status of the curated workload metrics has not been determined; no additional license grant for those records is asserted. They contain no dataset source text or token sequences, but that fact alone does not resolve the legal treatment of every derived metric.
 
 ---
 
@@ -52,7 +52,7 @@ If a future release ships HumanEval problems or a subset, it must carry OpenAI's
 | How used | dev sentences with **≥ 25 source tokens** (shorter ones end before N=16 and are unusable), then the first 20 whose chat-templated prompt stays within L ≤ 180. Used as a workload; the correction quality of a 0.5B model is not evaluated and no GLEU/ERRANT score is claimed |
 | Redistributed? | **No.** No source sentences, no references, no token sequence from which a sentence can be recovered |
 
-**This one deserves care.** CC BY-NC-SA 4.0 carries a non-commercial clause and a share-alike clause. Whether a given use is commercial is a property of that use, not of the institution or of whether the paper is free to read; a commercial publisher redistributing licensed content is a case to check with the rights holder rather than to assume. This candidate includes numerical measurements from JFLEG-based workloads but no JFLEG source sentences. Whether the numerical records are subject to restrictions on adapted material requires a rights assessment; the absence of source text alone does not settle that question. Anyone regenerating the prompts should follow the applicable terms and preserve attribution, the licence link, and a note of the 25-token / 180-token filtering.
+**This one deserves care.** CC BY-NC-SA 4.0 carries a non-commercial clause and a share-alike clause. Whether a given use is commercial is a property of that use, not of the institution or of whether the paper is free to read; a commercial publisher redistributing licensed content is a case to check with the rights holder rather than to assume. This package includes numerical measurements from JFLEG-based workloads but no JFLEG source sentences. Whether the numerical records are subject to restrictions on adapted material requires a rights assessment; the absence of source text alone does not settle that question. Anyone regenerating the prompts should follow the applicable terms and preserve attribution, the licence link, and a note of the 25-token / 180-token filtering.
 
 ---
 

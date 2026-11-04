@@ -1,8 +1,8 @@
 # Reproduction package: fixed-shape speculative decoding on an Ascend 310B4
 
-This package accompanies the manuscript *Salvo: Speculative Decoding Inside Fixed-Shape Graphs on a Memory-Constrained NPU*. It contains the code, the frozen inputs and the measurement records needed to re-derive the numbers that the paper's absolute claims rest on.
+This package accompanies the manuscript *Salvo: Speculative Decoding Inside Fixed-Shape Graphs on a Memory-Constrained NPU*. It contains code, frozen calibration inputs and selected measurement records supporting the checks described below.
 
-**Local review candidate:** the curated numerical data are under rights and consistency review; see `REVIEW_HOLD.md`. It is deliberately a subset, not a mirror of the working repository. What it can and cannot reproduce is stated below, so that a reader can tell the difference between "the package is incomplete" and "the result does not replicate".
+This package is a subset of the working repository. Its coverage and limitations are stated below. The legal status of the third-party-derived numerical records is not determined; see `DATA_REUSE.md` and `THIRD_PARTY_NOTICES.md`.
 
 ## What this package reproduces
 

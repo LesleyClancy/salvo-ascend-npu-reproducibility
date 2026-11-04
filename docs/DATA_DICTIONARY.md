@@ -60,7 +60,7 @@ What the package *does* let a reader check is narrower than "no near-tie implies
 
 ## `data/curated/` — derived numerical results
 
-See `data/curated/README.md` for schema, selection and verification. These files contain no prompt text or token streams; the equality flags cannot be independently rechecked from them. Rights review remains pending.
+See `data/curated/README.md` for schema, selection and verification. These files contain no prompt text or token streams; the equality flags cannot be independently rechecked from them. The legal status of third-party-derived numerical records is not determined; see `DATA_REUSE.md`.
 
 ## `data/calibration/*.log` — the harness transcript
 

@@ -1,9 +1,13 @@
 # MANIFEST
 
-This manifest lists 170 files in the local review candidate. Each row records the byte length and SHA-256 of a shipped file. The manifest itself is excluded from the list to avoid a self-referential hash.
+This manifest lists 170 files in the package. Each row records the byte length and SHA-256 of a shipped file. The manifest itself is excluded from the list to avoid a self-referential hash.
 
 | path | bytes | sha256 |
 |---|---:|---|
+| `DATA_REUSE.md` | 802 | `c09169d38dd1f0793e7f3fa61b7047e104b6cee708e0f6101d5444472a81d757` |
+| `LICENSE` | 1,595 | `616a20e594e77646f53d52bda1d7d8f990cf854414a44e18a676d95184481f5d` |
+| `README.md` | 7,845 | `d69f3f21e502d86a0d0e0ac43d58d36ce0e40954703bf3c6779a88fa8272186f` |
+| `THIRD_PARTY_NOTICES.md` | 6,627 | `ff2d97e57afa5f03801681fc373dedaa0039be5cea2e0d2426f09421391fb9f6` |
 | `cases/calib/e2r2_inputs_qwen25_05b_copy_r1/gen_ids.bin` | 472 | `fc4fd8fed5c879b5648fa62feffdf5d85ceee6e476b7e4a1f1110a42050c1d6a` |
 | `cases/calib/e2r2_inputs_qwen25_05b_copy_r1/geom.txt` | 12 | `78814ac4b1b12b48f4881e5ce3dbbd4743133391b0f7139efc3f1d9d9e03d53e` |
 | `cases/calib/e2r2_inputs_qwen25_05b_copy_r1/k_prefix.bin` | 1,572,864 | `801609e9b38baa808720384f4ec6b90a39e8ede91a914f870ae85c3b38fac3bd` |
@@ -125,26 +129,23 @@ This manifest lists 170 files in the local review candidate. Each row records th
 | `data/calibration/e3_copy_g32_calib911g32.json` | 3,963 | `1048baf45f88dc350ecd363903ae949979cea2b08d0361645d3a06066d68c481` |
 | `data/calibration/e3_copy_g4_scan911.json` | 5,591 | `3a16b3da065882c887ece8198fcfb0159ed755759cca8735bb84f2b7fd4c46bd` |
 | `data/calibration/e3_copy_g8_scan911.json` | 4,727 | `65537edb3f012e30acdfc183fec1ce6a8cafbd74748a9c00ff9e0c1c9fc8d950` |
+| `data/curated/README.md` | 3,025 | `d3d02fb9882c5777ad6e3905f8a0ee67dda97938b3d3b13a2a0a7b14e165c410` |
 | `data/curated/benchmark_55_summary.csv` | 9,928 | `d5deaf37f2aa701bc7886fddd1d6ce47f810b97ddf24cf5d74d9808bece81d06` |
 | `data/curated/benchmark_all_repetitions.csv` | 16,915 | `988649513981b8ff30c6f8193ee9ab8acc27819b53a44026500f7fd7e6a3d5d0` |
 | `data/curated/divergence_margins.json` | 431 | `5de01bdf515721efaabc4bfb1450a3d48b235645ab2be867d7a3456f180a2856` |
 | `data/curated/energy_numeric.json` | 31,070 | `0f4162d4f98150229072733857434b0e5158577713057ab8e77fd20b006329c7` |
 | `data/curated/margins_55.json` | 10,028 | `3e1ee03ab324c613c11e6c30d073d92611ca8dc0c9a85875c38cae6313ca7437` |
 | `data/curated/prefill_measurements.json` | 714 | `ab078446685f2dd1cdc6ccb8bd4d88d30f3c72f78d144bacd29cc4c79883a2f8` |
-| `data/curated/README.md` | 3,038 | `edeaae19de81a2fa7c5b091672c13897b5bac30540d3513bee3291c97820b891` |
 | `data/curated/source_inventory.json` | 12,041 | `ce7bb32883ff2d2f619edbba904078b36ca42edbaa054478e27a417795b1dacb` |
+| `data/logs_2026-11-02/README.md` | 3,093 | `9d885f98d6f82c7e3b600a5df3d9be21b7110b5d4c136b924d3b2de189abec53` |
 | `data/logs_2026-11-02/compile_g1.log` | 619 | `4f2599c05854559624d2e9dbf808faccf83e155d58be1a92b414bd2467bf396b` |
 | `data/logs_2026-11-02/measure_rebuilt_g1.json` | 13,253 | `34fda77850ea870b6c59db24e27c229eaaac7b23f07ab1887c3a540b05f097be` |
-| `data/logs_2026-11-02/README.md` | 3,093 | `9d885f98d6f82c7e3b600a5df3d9be21b7110b5d4c136b924d3b2de189abec53` |
 | `data/verification_2026-11-02.md` | 4,286 | `730f93ad690211065e262163cdeb72f1970c59d1f6d769d7ee8126d079d85b92` |
-| `docs/check_env.sh` | 1,743 | `c3a485f93164fd6443e7093a479dc16e0ce724cdaff4d00670cabd7611040402` |
-| `docs/DATA_DICTIONARY.md` | 6,287 | `24badd278c795bc3b41062ac5a6c92104aee67084bbd4ebd0391ff827819dba9` |
+| `docs/DATA_DICTIONARY.md` | 6,354 | `e9991d3138050167e10a16a9b7d87e3411686ddc05ab06a469647e1f0b13d7e4` |
 | `docs/ENVIRONMENT.md` | 5,535 | `c5fdc33f3032470a99c84a8b0c66d388ff94b0b46230bfcc1444496d5fc31c17` |
-| `docs/PROVENANCE.md` | 8,252 | `ccb83dcad690f0ad7cf845b29045c8d7ad467c17c303682e05928dd589a977c1` |
+| `docs/PROVENANCE.md` | 8,039 | `6cc1fe87587bb5a4bcffd74160e7ed7e232944f24ee197d441067b73132c4b2d` |
 | `docs/REPRODUCE.md` | 14,949 | `a032e35b12cb5e49efc6d805d2c71ecdb9e48db925405b40b4e1f5f53f5f4b8f` |
-| `LICENSE` | 1,595 | `616a20e594e77646f53d52bda1d7d8f990cf854414a44e18a676d95184481f5d` |
-| `README.md` | 8,083 | `4e78d56c4090c96ff286e4e53b017dd4df4d557b2b31d4187457f8733a18cfce` |
-| `REVIEW_HOLD.md` | 578 | `90a7b98261e09a3533cc2468dde7c1a3924ffeedca05d4da68307ce06dadc277` |
+| `docs/check_env.sh` | 1,743 | `c3a485f93164fd6443e7093a479dc16e0ce724cdaff4d00670cabd7611040402` |
 | `src/__init__.py` | 146 | `47eb3c9f9cf716399834c6ca1b059e706436793cf87e6f42cf95e4e78459e1a3` |
 | `src/adapters/__init__.py` | 76 | `90cc88c9d488e6451306f8a3b7d28e6d6789ba726e5a6917cb67d23f75259521` |
 | `src/adapters/qwen25.py` | 13,216 | `66383dc97148043ac055579dda485cc26c685b35c1d6880db21665bbb1b21252` |
@@ -160,7 +161,6 @@ This manifest lists 170 files in the local review candidate. Each row records th
 | `src/planner/reference.py` | 7,279 | `1fc61f54be4637cdd10653219318f94eedc3e522d34347486f08af4233bb89b3` |
 | `src/runtime/__init__.py` | 68 | `49f23c0ebc53de46f81ab626d7189c164a70b0dfa018762a5fd64ceba6d3d181` |
 | `src/runtime/board_protocol.py` | 5,187 | `8f190b34f16c902c5fe0838ab2bc54e0d20781247678f0d3175efddd24d63321` |
-| `THIRD_PARTY_NOTICES.md` | 6,703 | `ef89d6692481046ad8d6ed4b3b49cc3f7e9d79fb0ddcd678f3d88ade4b9213f8` |
 | `tools/board_atc9_e3.sh` | 4,403 | `753719a0fb468cbd154212698d4523cb3724f90d8c82ab9cd889814b2fe99f77` |
 | `tools/board_bw_probe.c` | 4,391 | `b0d0d13e8b35755ee07c905c9cab9ed794289c8b40a70e2ddcf3554f4659e870` |
 | `tools/board_calib9.sh` | 1,311 | `24904407a788a7889bec9e1c7a733000de14bdde50f912d2e8303efc618f3364` |

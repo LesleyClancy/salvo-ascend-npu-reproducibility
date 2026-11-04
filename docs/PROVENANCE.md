@@ -56,8 +56,5 @@ The 2026-11-02 run in `data/verification_2026-11-02.md` is the closest check ava
 
 ## Curated numerical records
 
-The `data/curated/` files preserve selected numeric measurements and document the duplicate `free_1` observation. They are derived records, not full original harness files, and omit prompt text, token streams and absolute paths. Their source inventory contains hashes of source files not shipped here. `REVIEW_HOLD.md` identifies the unresolved rights assessment.
+The `data/curated/` files preserve selected numeric measurements and document the duplicate `free_1` observation. They are derived records, not full original harness files, and omit prompt text, token streams and absolute paths. Their source inventory contains hashes of source files not shipped here. `DATA_REUSE.md` describes the unresolved rights question.
 
-## A note on language
-
-The public candidate uses English filenames and documentation. The omitted working record contains Chinese internal notes.

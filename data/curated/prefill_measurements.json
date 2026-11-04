@@ -1,0 +1,30 @@
+{
+  "copy_r1": {
+    "L": 98,
+    "serial_ms": 65302.95287599995,
+    "blocked_ms": 4657.514180000021,
+    "launches": 4,
+    "serial_ms_per_token": 666.3566619999995
+  },
+  "copy_2": {
+    "L": 93,
+    "serial_ms": 9887.13215000007,
+    "blocked_ms": 342.18581400000403,
+    "launches": 3,
+    "serial_ms_per_token": 106.31324892473194
+  },
+  "gec_00": {
+    "L": 72,
+    "serial_ms": 7936.685729999908,
+    "blocked_ms": 342.0678749999979,
+    "launches": 3,
+    "serial_ms_per_token": 110.23174624999872
+  },
+  "he_00": {
+    "L": 147,
+    "serial_ms": 15551.099278999915,
+    "blocked_ms": 571.5411150000591,
+    "launches": 5,
+    "serial_ms_per_token": 105.78979101360486
+  }
+}

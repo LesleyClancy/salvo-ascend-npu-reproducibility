@@ -1,0 +1,45 @@
+=== CALIB gamma=1 cases=copy_1,copy_2 reps=5 single=1 warmup=1 2026-10-28T02:46:27+08:00 ===
+ASCEND_HOME_PATH=/data/Ascend/cann-9.1.1
+MemAvailable=2921 MB
+=== E2O board: device top-1 + D2D commit, gamma=1, reps=5 warmup_full=True run_tag=calib911g1 ===
+load single qwen25_05b_g1.om ...
+  loaded in 33.8s T=1
+/home/HwHiAiUser/kv_probe/board_run_e2o.py:303: Warning: acl.util.numpy_to_ptr will be deprecated. Please use acl.util.bytes_to_ptr instead.
+  acl.rt.memcpy(ck, k0.nbytes, acl.util.numpy_to_ptr(k0), k0.nbytes, 1)
+/home/HwHiAiUser/kv_probe/board_run_e2o.py:304: Warning: acl.util.numpy_to_ptr will be deprecated. Please use acl.util.bytes_to_ptr instead.
+  acl.rt.memcpy(cv, v0.nbytes, acl.util.numpy_to_ptr(v0), v0.nbytes, 1)
+/home/HwHiAiUser/kv_probe/board_run_e2o.py:261: Warning: acl.util.numpy_to_ptr will be deprecated. Please use acl.util.bytes_to_ptr instead.
+  acl.util.numpy_to_ptr(ids), ids.nbytes, 1)
+/home/HwHiAiUser/kv_probe/board_run_e2o.py:263: Warning: acl.util.numpy_to_ptr will be deprecated. Please use acl.util.bytes_to_ptr instead.
+  acl.util.numpy_to_ptr(pos), pos.nbytes, 1)
+warmup base: 0.7s
+warmup spec: 0.1s
+full warmup base (discarded): 3346.8ms wall=3.4s
+full warmup spec (discarded): 3298.9ms wall=3.3s
+--- copy_1 L=150 N=32 usable=True ---
+  base rep0: total=3294.04ms exact=True
+  base rep1: total=3298.48ms exact=True
+  base rep2: total=3294.07ms exact=True
+  base rep3: total=3293.78ms exact=True
+  base rep4: total=3295.30ms exact=True
+  spec rep0: total=3297.07ms exact=True
+  spec rep1: total=3296.78ms exact=True
+  spec rep2: total=3296.92ms exact=True
+  spec rep3: total=3302.03ms exact=True
+  spec rep4: total=3298.44ms exact=True
+  SUMMARY copy_1: base=3294.07ms spec=3297.07ms speedup=0.999 base_exact=True spec_exact=True spec_eq_base=True
+--- copy_2 L=93 N=16 usable=True ---
+  base rep0: total=1596.13ms exact=True
+  base rep1: total=1593.69ms exact=True
+  base rep2: total=1595.21ms exact=True
+  base rep3: total=1594.78ms exact=True
+  base rep4: total=1593.31ms exact=True
+  spec rep0: total=1597.59ms exact=True
+  spec rep1: total=1594.23ms exact=True
+  spec rep2: total=1597.26ms exact=True
+  spec rep3: total=1597.71ms exact=True
+  spec rep4: total=1595.96ms exact=True
+  SUMMARY copy_2: base=1594.78ms spec=1597.26ms speedup=0.998 base_exact=True spec_exact=True spec_eq_base=True
+json: /home/HwHiAiUser/kv_probe/e3/e3_copy_g1_calib911g1.json
+EXIT=0
+=== DONE 2026-10-28T02:48:12+08:00 ===

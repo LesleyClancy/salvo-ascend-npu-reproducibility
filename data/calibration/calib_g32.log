@@ -1,0 +1,29 @@
+=== CALIB gamma=32 cases=copy_1 reps=3 single=1 warmup=1 2026-10-28T03:13:07+08:00 ===
+ASCEND_HOME_PATH=/data/Ascend/cann-9.1.1
+MemAvailable=2903 MB
+=== E2O board: device top-1 + D2D commit, gamma=32, reps=3 warmup_full=True run_tag=calib911g32 ===
+load single qwen25_05b_g32.om ...
+  loaded in 24.7s T=32
+/home/HwHiAiUser/kv_probe/board_run_e2o.py:303: Warning: acl.util.numpy_to_ptr will be deprecated. Please use acl.util.bytes_to_ptr instead.
+  acl.rt.memcpy(ck, k0.nbytes, acl.util.numpy_to_ptr(k0), k0.nbytes, 1)
+/home/HwHiAiUser/kv_probe/board_run_e2o.py:304: Warning: acl.util.numpy_to_ptr will be deprecated. Please use acl.util.bytes_to_ptr instead.
+  acl.rt.memcpy(cv, v0.nbytes, acl.util.numpy_to_ptr(v0), v0.nbytes, 1)
+/home/HwHiAiUser/kv_probe/board_run_e2o.py:261: Warning: acl.util.numpy_to_ptr will be deprecated. Please use acl.util.bytes_to_ptr instead.
+  acl.util.numpy_to_ptr(ids), ids.nbytes, 1)
+/home/HwHiAiUser/kv_probe/board_run_e2o.py:263: Warning: acl.util.numpy_to_ptr will be deprecated. Please use acl.util.bytes_to_ptr instead.
+  acl.util.numpy_to_ptr(pos), pos.nbytes, 1)
+warmup base: 0.3s
+warmup spec: 0.1s
+full warmup base (discarded): 3542.8ms wall=3.5s
+full warmup spec (discarded): 244.8ms wall=0.3s
+--- copy_1 L=150 N=32 usable=True ---
+  base rep0: total=3546.91ms exact=True
+  base rep1: total=3545.23ms exact=True
+  base rep2: total=3547.93ms exact=True
+  spec rep0: total=230.59ms exact=True
+  spec rep1: total=230.01ms exact=True
+  spec rep2: total=230.35ms exact=True
+  SUMMARY copy_1: base=3546.91ms spec=230.35ms speedup=15.398 base_exact=True spec_exact=True spec_eq_base=True
+json: /home/HwHiAiUser/kv_probe/e3/e3_copy_g32_calib911g32.json
+EXIT=0
+=== DONE 2026-10-28T03:14:03+08:00 ===

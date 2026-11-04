@@ -1,0 +1,66 @@
+{
+  "schema": "kvprobe-environment/1",
+  "note": "Technical environment for this release. Personal, organisational and tool-specific fields present in the development notes are deliberately omitted; nothing here identifies a person or a machine by name.",
+  "board": {
+    "product": "Atlas 200I DK A2",
+    "soc": "Ascend 310B4",
+    "atc_soc_version": "Ascend310B4",
+    "unified_memory_gib": 3.4,
+    "device_memory_mb": 3514,
+    "cpu_cores": 3,
+    "cpu_arch": "aarch64",
+    "swap_gib": 8.0,
+    "os": "openEuler (board image)",
+    "python_system": "3.10.6",
+    "python_tbe": "3.9.2 (Miniconda; NumPy 1.22.4, required by the ATC operator compiler)",
+    "disk": {
+      "root_filesystem_gib": 58,
+      "m2_mount_gib": 103
+    }
+  },
+  "toolchain": {
+    "original": {
+      "cann": "8.2.RC1",
+      "root": "/usr/local/Ascend/ascend-toolkit",
+      "used_for": "all numbers reported in the paper"
+    },
+    "recalibration": {
+      "cann": "9.1.1",
+      "root": "/data/Ascend/cann-9.1.1",
+      "driver": "26.1.0",
+      "firmware": "9.0.0.8.200",
+      "used_for": "Table S1 platform check only"
+    },
+    "notes": [
+      "atc is not on PATH until set_env.sh is sourced; under a non-login shell that script exits silently, so every board command must run under `bash -l`.",
+      "The ATC operator compiler needs a Python with NumPy on PATH; the board's system Python has NumPy 2.x, which the 9.1.1 TBE does not accept, hence the Miniconda interpreter.",
+      "Compilation peak resident set is 2.24-2.49 GB on a 3.4 GB board; builds complete only by using the 8 GB swap file.",
+      "atc prints 'ATC run success', writes the .om, then faults during exit (SIGBUS or SIGSEGV). The artefacts are valid; the acceptance test is load plus token-level correctness, never the exit status."
+    ]
+  },
+  "development_host": {
+    "os": "Windows 11",
+    "cpu": "AMD Ryzen 7 9800X3D (8 cores / 16 threads)",
+    "ram_gb": 31.1,
+    "gpu": "NVIDIA GeForce RTX 5080 (16 GB)",
+    "python": "3.13.16",
+    "role": "ONNX export, input generation, analysis and figure rendering only; no timing is taken here"
+  },
+  "models": {
+    "main": {
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "layers": 24,
+      "kv_heads": 2,
+      "head_dim": 64,
+      "kv_capacity": 256,
+      "precision": "fp16"
+    },
+    "boundary": {
+      "hf_id": "Qwen/Qwen3-0.6B",
+      "layers": 28,
+      "kv_heads": 8,
+      "head_dim": 128,
+      "note": "used only to establish a residency boundary; reported at gamma=2 through the single-graph path"
+    }
+  }
+}

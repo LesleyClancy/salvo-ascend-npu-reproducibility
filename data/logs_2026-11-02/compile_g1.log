@@ -1,0 +1,15 @@
+=== E3 g1 (must_keep_origin_dtype) ===
+START     : 2026-11-02T21:52:40+08:00
+MEM_BEFORE: 2773 MB available
+ONNX_SHA  : b9dad0effd1f116322e0dfdac35290076924ba196d2f0ceae70efbf14fb60596
+ATC_EXIT=0
+MEM_PEAK : PEAK atc.bin RSS = 2084 MB | MIN MemAvailable = 26 MB | TRIP=0
+..................................
+ATC run success, welcome to the next use.
+
+-rw------- 1 HwHiAiUser HwHiAiUser 1264166074 Nov  2 22:03 qwen25_05b_g1.om
+7724b8cc2f7965f34086d6ca1651af734ea7cd4f2ee7ef3586492db98f8f4a4b  qwen25_05b_g1.om
+MEM_AFTER : 2918 MB available
+END       : 2026-11-02T22:04:03+08:00
+
+=== ALL DONE: 2026-11-02T22:04:03+08:00 ===

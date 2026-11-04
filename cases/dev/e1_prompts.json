@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "frozen": "2026-10-23",
+  "note": "E1 prompt set; frozen before any output was generated.",
+  "prompts": [
+    {
+      "id": "copy_1",
+      "category": "copy",
+      "text": "Maintenance log:\nAsset A-1042 | inspected 2026-03-11 | pressure 7.4 bar | status OK\nAsset B-2087 | inspected 2026-03-12 | pressure 6.1 bar | status REPAIR\nAsset C-3391 | inspected 2026-03-13 | pressure 8.2 bar | status OK\n\nQuestion: Repeat the exact line for Asset B-2087.\nAnswer: Asset B-2087"
+    },
+    {
+      "id": "copy_2",
+      "category": "copy",
+      "text": "Invoice:\nItem 1: 14 units at 3.25 USD\nItem 2: 6 units at 12.50 USD\nItem 3: 2 units at 99.00 USD\n\nQuestion: Copy Item 3 exactly.\nAnswer: Item 3:"
+    },
+    {
+      "id": "copy_3",
+      "category": "copy",
+      "text": "Meeting notes:\n- Owner: Dana; deadline: 2026-04-02; action: update the valve schedule.\n- Owner: Luis; deadline: 2026-04-05; action: order the pressure sensor.\n\nQuestion: Repeat Luis's action exactly.\nAnswer:"
+    },
+    {
+      "id": "code_1",
+      "category": "code",
+      "text": "def moving_average(xs, window):\n    \"\"\"Return the moving average of xs with the given window.\"\"\"\n"
+    },
+    {
+      "id": "code_2",
+      "category": "code",
+      "text": "class RingBuffer:\n    def __init__(self, capacity):\n        self.capacity = capacity\n        self.data = [None] * capacity\n        self.head = 0\n        self.size = 0\n\n    def push(self, value):\n"
+    },
+    {
+      "id": "code_3",
+      "category": "code",
+      "text": "def parse_kv(line):\n    \"\"\"Parse 'key=value;key=value' into a dict.\"\"\"\n    result = {}\n    for part in line.split(';'):\n"
+    },
+    {
+      "id": "free_1",
+      "category": "free",
+      "text": "Explain in two sentences why the sky is blue."
+    },
+    {
+      "id": "free_2",
+      "category": "free",
+      "text": "Give three practical reasons to keep a lab notebook."
+    },
+    {
+      "id": "free_3",
+      "category": "free",
+      "text": "Describe how a bicycle derailleur changes gears, in plain language."
+    }
+  ]
+}
